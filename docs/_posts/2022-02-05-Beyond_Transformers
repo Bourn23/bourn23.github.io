@@ -1,0 +1,59 @@
+layout: 
+post title: "POST TITLE" 
+date: 2022-02-05 17:48:40 -0000 
+categories: thought-game envisioning
+
+Beyond Transformers
+
+***
+Disclaimer: These ideas are by no means mean any harm to any entity nor represent any idealogies. These are the author's expression of its momentarily experience
+thus, must and can not be addressed in any scientific manner or has no legal bearings and no legal actions could be against these words.
+***
+
+***
+Disclaimer: This work is co-authored by GPT-3. any text highlighted in **bold** is the expressions of the InstructGPT-3, latest OpenAI's model as of Feb-2022.
+***
+
+Transformers architecutre have gained popularity amongst the computer scientists. These models introduced attention mechanism to the existing encoder-decoder 
+stereotype and revolutionized the learning of neural networks. The attention module also introduced interpretability into the interior working of the model.
+And in the years after we have seen many variations of Transformers in different field such as Natural Language Processing and Computer Vision.
+
+But what is it about the transformers that make them different? Is it the Attention module? Is it what's revolutionizing it? We've seen large transformer-based models
+such as GPT-family achieving the first sign of intelligence, or perhaps memorization. Unfortunately because of the memory limits of these models, there the GPT-models
+have a very short memory span. This has tremendously affected their performance.
+There has been some incremental improvement made by researchers to stabilize this behavior, this includes: 
+- (Microsoft's KEAR) adding an external attention module to interact with the outter world
+- (DeepMind's GOPHER) learning to retrieve knowledge from database.
+- (Google's T5) increasing the # of parameters, to 1.6T down from 175B.
+- (Nvidea's Turing-NLG) 570B parameter model (basically larger model).
+
+While there might be some major innovation at stake when developing, training, or deploying these large scale models, yet there has not been significant attention
+paid to the underlying architecture.
+
+
+Transformers, despite solving the problem of learning from long-term dependencies using attention module, suffer from short-lived memory due to 
+the O(n^2) complexity of the attention module. For instance, given a 100k long sequence, the attention module needs to compute a Key-Query pair
+of 100k x 100k = 10B, which is computationally infeasible.
+
+Google (as expected, and using their x10 thinking methodology) introduced reformers to mititgate these problems and explore the long-term dependencies. 
+But yet, author of this article believes that these models are by no means approaching the human-intelligence (super-intelligence) we once set our aim for. 
+These are engineered solutions to solve existing problems in our era. Effective, yet fundumentally off-track.
+
+The reader might ask: "What is the path forward?"
+
+GPT-3 itself might answer:
+**Well, the answer is not clear just yet, but we need to explore more fundamental architectural changes, for instance, in the way the data is being processed. 
+This might involve looking into alternative architectures, such as hierarchical models or reinforcement learning models.**
+
+Author answer's is:
+Our hope should go towards "Energy-based models." **What this means is that the transformer's memory should not be based on the number of parameters, but on the amount of energy needed to maintain the state of the model. This will enable the model to "forget" past information when it is not needed, and only focus on the important bits.
+This will also introduce a more stable and sustainable memory into the model, which is important for long-term learning.**
+To elaborate on this idea, we can think of the following architectural change:
+**
+- Instead of having a single large transformer, have multiple smaller transformers that are connected in a sequence.
+- The input to each transformer is a fixed-length sequence, and the output of the last transformer is the output of the model.
+- The sequence of transformers can be trained jointly, or in a staggered manner.
+
+This will enable the model to "forget" past information when it is not needed, and only focus on the important bits.
+This will also introduce a more stable and sustainable memory into the model, which is important for long-term learning.
+**
