@@ -57,3 +57,7 @@ To elaborate on this idea, we can think of the following architectural change:
 This will enable the model to "forget" past information when it is not needed, and only focus on the important bits.
 This will also introduce a more stable and sustainable memory into the model, which is important for long-term learning.
 **
+
+Reference:
+- 10.1109/ICoDT252288.2021.9441516
+
